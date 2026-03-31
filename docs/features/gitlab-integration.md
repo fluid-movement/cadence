@@ -4,11 +4,11 @@
 
 ## Overview
 
-Deep integration with the agency's self-hosted GitLab instance. The goal is to link development activity (commits, merge requests, branches) directly to Cadence tasks.
+Deep integration with a self-hosted GitLab instance. The goal is to link development activity (commits, merge requests, branches) directly to Cadence tasks.
 
 ## Convention
 
-The agency already uses a convention of including the task number in every commit message. This is the foundation of the integration.
+A common convention of including the task number in every commit message is the foundation of the integration. This is the foundation of the integration.
 
 Example commit: `PROJ-42: fix null pointer in user service`
 

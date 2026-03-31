@@ -48,7 +48,7 @@ See [projects-versions.md](projects-versions.md) for the version planning UX. Fr
 
 ### Extended Dashboards
 
-- Cross-project reporting (agency-wide view)
+- Cross-project reporting (organization-wide view)
 - Team velocity and throughput over time
 - Custom report builder
 

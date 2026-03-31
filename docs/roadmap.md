@@ -2,7 +2,7 @@
 
 ## V1 — Core System
 
-The minimum viable product covering the agency's daily workflow.
+The minimum viable product covering the team's daily workflow.
 
 ### User & Access Management
 - User accounts with optional team and user group assignments

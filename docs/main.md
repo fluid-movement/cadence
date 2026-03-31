@@ -1,13 +1,13 @@
 # Cadence — Task Management System
 
-Cadence is a tailor-made task management system built for an agency running multiple projects in parallel. It replaces a self-hosted Jira instance and is designed around the agency's actual workflow — not a generic agile framework.
+Cadence is a tailor-made task management system built for teams running multiple projects in parallel. It replaces Jira and is designed around how teams actually work — not a generic agile framework.
 
 ## Problem Statement
 
-The agency uses Jira extensively but is stuck on an old self-hosted version. A custom-built system allows:
-- Features tailored exactly to the agency's workflow (no bloat, no missing pieces)
+A custom-built system allows:
+- Features tailored exactly to the team's workflow (no bloat, no missing pieces)
 - Full control over hosting, data, and future development
-- A better UX for the PM/team lead planning loop the agency actually uses
+- A better UX for the PM/team lead planning loop
 
 ## Who Uses It
 

@@ -17,7 +17,7 @@ Every person who accesses Cadence has a user account. This includes internal sta
 
 ## Teams
 
-Teams represent the functional departments of the agency.
+Teams represent the functional departments within an organization.
 
 Examples: `dev`, `design`, `online-marketing`, `hr`, `operations`
 

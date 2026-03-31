@@ -38,7 +38,7 @@ yes we want task dependencies, like in jira. lets get the full link types. we ca
 ---
 
 ### T4 — Multiple Assignees
-Currently the spec has a single `assignee`. Some tools (Linear, Height) allow multiple assignees. In an agency context, a task might need a developer AND a designer.
+Currently the spec has a single `assignee`. Some tools (Linear, Height) allow multiple assignees. In a multi-discipline team, a task might need a developer AND a designer.
 
 Do we want multiple assignees, or is the single assignee + spectators model sufficient? If multiple, how do we handle "who is primarily responsible"?
 single assignee
@@ -205,7 +205,7 @@ The spec doesn't mention login method. Options:
 - **C: SAML** — enterprise SSO
 - **D: LDAP/Active Directory**
 
-For an agency on Google Workspace, option B would be highly convenient. Worth deciding early as it affects the auth implementation.
+For teams on Google Workspace, option B would be highly convenient. Worth deciding early as it affects the auth implementation.
 yes we are using google workspace, so OAuth would be convenient. what would this mean for user management? we would still have users in our own DB, but the authentication would be pushed to google, right? then we can pretty much hand off auth. that would be the best. But if we abstract the "authenticated" status, we can always replace or expand this
 ---
 
@@ -379,7 +379,7 @@ the super user should be able to build global filters that all users can see. so
 ## Time Tracking
 
 ### TT1 — Billable vs. Non-Billable Time
-Not in the spec. Critical for an agency doing client billing. A time log entry should probably be flaggable as billable or non-billable. Some time might be internal (e.g. team meetings, internal tools work) vs. client-billable.
+Not in the spec. Critical for teams doing client billing. A time log entry should probably be flaggable as billable or non-billable. Some time might be internal (e.g. team meetings, internal tools work) vs. client-billable.
 
 Do we want a `billable: boolean` on time log entries? And can this be defaulted per project (client projects are billable, internal projects are not)?
 no, if i as a dev am tracking time i can decide if time is billable, i am just tracking time. what happens with it is the work of the PM or front office who do the billing
@@ -408,7 +408,7 @@ Already flagged as TODO. Deciding this is important for V1:
 - **PDF** — for sending to clients directly
 - **Integration** — push to an external billing tool (Harvest, Toggl, Lexoffice, etc.)
 
-What billing system does the agency currently use, and does the export need to feed into it?
+What billing system is in use, and does the export need to feed into it?
 no idea, i need to check this. lets just create the tracking, and the UI with which users can see their tracked time, like in Jira
 ---
 
@@ -534,7 +534,7 @@ yes definitely. as we are using postgres, i definitely plan on using pg-vector, 
 ---
 
 ### M2 — Jira Migration / Import
-The agency is migrating from Jira. Is there a data import path? Jira supports XML/CSV export.
+Migrating from Jira. Is there a data import path? Jira supports XML/CSV export.
 
 Do we want a one-time Jira import tool? This could save significant manual re-entry work.
 yes we definitely need a migration path, but we can put this off. This will probably be a separate thing, as it will be a "one time" affair
